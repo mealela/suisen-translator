@@ -1,0 +1,2 @@
+# uv 解析覆盖：Python 3.14 没有 numpy<2.1 的预编译 wheel，放宽上限
+numpy>=2.5

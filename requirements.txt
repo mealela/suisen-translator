@@ -1,0 +1,26 @@
+PySide6>=6.6
+# 预览播放器: libmpv 的 Python 绑定(纯 Python); libmpv-2.dll 本体首次启动自动下载到 models/bin/
+python-mpv>=1.0.7
+# 自动下载 libmpv 时解 7z 用
+py7zr>=0.21
+# 预览伴音使用 PySide6 自带的 QtMultimedia, 无额外依赖; 环境没有音频后端时自动静音
+opencv-python>=4.9
+numpy>=1.26,<2.1
+requests>=2.31
+av>=12
+# 让 requests 信任 Windows 系统证书库(杀毒软件/代理拦截 HTTPS 的自签名证书时不报 SSL 校验错)
+truststore>=0.8
+
+# 定位 + 本地读字(纯 ONNX Runtime; PP-OCRv5/v6 模型首次使用自动下载)
+rapidocr>=3.0
+onnxruntime>=1.20
+# Windows 显卡加速可替换为: onnxruntime-directml  (然后在 设置→定位 勾选 DirectML; 未安装时该选项自动忽略)
+
+# 无痕擦除(LAMA): 发行版由模型库在用户机器上自动安装运行时(按有无 N 卡选 torch 构建); 开发环境可手动装回
+# simple-lama-inpainting
+
+# API Key 存入系统凭据库(Windows 凭据管理器/macOS 钥匙串/Linux SecretService)
+keyring>=25
+
+# 可选：本地文本 GGUF 翻译
+# llama-cpp-python

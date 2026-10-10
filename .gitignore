@@ -1,0 +1,42 @@
+# ---- 模型/第三方引擎/二进制(体积与许可证, 用户自备, 绝不入库) ----
+models/
+third_party/
+ffmpeg.exe
+ffprobe.exe
+*.part
+*.part.json
+
+# ---- 本地配置(含API密钥, 绝不入库) ----
+config.json
+
+# ---- 运行产物 ----
+logs/
+.work/
+*_translated*.mp4
+*_translated*.ass
+*_translated*.srt
+*_sample_*.mp4
+*.partial-*.mp4
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.venv/
+build/
+dist/
+
+# ---- 打包产物(体积大, 不入库) ----
+水仙/
+installer-output/
+
+# ---- 数据库 ----
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+
+# ---- 本地备份快照 ----
+_backup*/
+
+# ---- 系统垃圾 ----
+Thumbs.db
+.DS_Store
