@@ -9,8 +9,7 @@
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%2F11-blue.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-green.svg)
 
-<!-- TODO: 截图 —— 将主界面/操作流程图片放入 assets/ 后替换下面一行 -->
-<!-- <img src="assets/screenshot-main.png" alt="主界面" width="800"> -->
+<img src="assets/screenshot-main.png" alt="主界面：顶部 01~05 流水线，左侧批量队列，右侧字幕编辑表格" width="900">
 
 </div>
 
