@@ -1,0 +1,88 @@
+水仙翻译器 SUISEN Translator — 第三方组件声明
+====================================================
+
+本软件分发的安装包中包含或按需下载以下第三方开源组件。
+各组件的许可证全文位于安装目录 third_party_licenses\ 文件夹。
+
+本软件自身的许可证见安装目录 LICENSE(Apache License 2.0)。
+
+------------------------------------------------------------
+随安装包分发的组件
+------------------------------------------------------------
+
+■ Qt / PySide6(GUI 框架)
+  许可证: GNU Lesser General Public License v3.0(全文: LGPL-3.0.txt, 并含 GPL-3.0.txt)
+  版权声明: Copyright (C) The Qt Company Ltd.
+  源码: https://code.qt.io / https://www.qt.io/download
+  说明: Qt 以动态链接库(DLL)形式随包分发, 未修改。依据 LGPL-3.0 第 4 条,
+        用户可自行替换这些 DLL(安装目录 _internal\ 下的 Qt6*.dll / PySide6\)。
+
+■ libmpv-2.dll(视频播放组件, mpv 播放器核心)
+  许可证: GNU General Public License v2.0 or later(全文: GPL-2.0.txt)
+  版权声明: 见 mpv-Copyright.txt
+  来源: shinchiro/mpv-winbuild-cmake 预编译构建
+  对应源码获取: https://github.com/mpv-player/mpv (构建脚本: https://github.com/shinchiro/mpv-winbuild-cmake)
+  说明: 以独立 DLL 形式随包分发, 运行时由程序动态加载, 未修改。
+
+■ py7zr(7z 解压, 用于运行时组件下载)
+  许可证: GNU Lesser General Public License v2.1 or later(全文: LGPL-2.1.txt)
+  源码: https://github.com/miurahr/py7zr
+
+■ python-mpv(libmpv 的 Python 绑定, 纯 Python)
+  许可证: LGPL-2.1 or later(全文: LGPL-2.1.txt; 上游许可为 GPLv2+ 或 LGPLv2.1+ 双选)
+  源码: https://github.com/jaseg/python-mpv
+
+■ RapidOCR(字幕定位, ONNX 推理)
+  许可证: Apache License 2.0(全文: Apache-2.0.txt)
+  源码: https://github.com/RapidAI/RapidOCR
+  附注: 首次运行下载的 PP-OCR 系列检测/识别模型自带其原始许可。
+
+■ ONNX Runtime(推理引擎)
+  许可证: MIT License(全文: MIT-onnxruntime.txt)
+  源码: https://github.com/microsoft/onnxruntime
+
+■ OpenCV(图像处理)
+  许可证: Apache License 2.0(全文: Apache-2.0-opencv.txt; 第三方组件见 opencv-3rd-party.txt)
+  源码: https://github.com/opencv/opencv
+
+■ PyAV(音视频封装)
+  许可证: BSD 3-Clause(全文: BSD-PyAV.txt)
+  源码: https://github.com/PyAV-Org/PyAV
+
+■ NumPy(数值计算)
+  许可证: BSD 3-Clause(全文: BSD-3-numpy.txt)
+  源码: https://github.com/numpy/numpy
+
+■ Requests(HTTP)
+  许可证: Apache License 2.0(全文: Apache-2.0-requests.txt)
+  源码: https://github.com/psf/requests
+
+■ keyring(API Key 系统凭据存储)
+  许可证: MIT License(全文: MIT-keyring.txt)
+  源码: https://github.com/jaraco/keyring
+
+■ truststore(系统证书库信任)
+  许可证: MIT License
+  源码: https://github.com/sethmlarson/truststore
+
+------------------------------------------------------------
+不随安装包分发、由程序在用户机器上按需下载的组件
+------------------------------------------------------------
+
+■ FFmpeg(音视频合成)
+  许可证: GPL/LGPL(gyan.dev essentials 预编译构建)
+  获取: 首次使用「原字处理/导出」时自动下载, 约 110MB
+  源码: https://ffmpeg.org / https://www.gyan.dev/ffmpeg/builds/
+
+■ LAMA 擦除运行时(torch + simple-lama-inpainting + big-lama 权重)
+  许可证: torch 为 BSD-3-Clause; simple-lama-inpainting 与 LAMA 权重为 Apache-2.0
+  获取: 模型库一键安装(有 NVIDIA 显卡约 2.6GB, 无显卡约 200MB)
+  源码: https://github.com/pytorch/pytorch / https://github.com/advimman/lama
+
+■ Ollama 本地模型(Qwen3-VL / Qwen3 / GLM-OCR / DeepSeek-R1 等)
+  许可证: 各模型自带许可, 由用户经 Ollama 自行拉取
+  来源: https://ollama.com/library
+
+■ STTN / ProPainter / DiffuEraser(高级视频擦除引擎, 用户自备)
+  许可证: ProPainter 为 S-Lab 非商用许可; 其余见其各自仓库
+  说明: 不随包分发, 用户自行下载并在确认框中知悉许可限制。

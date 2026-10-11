@@ -152,7 +152,7 @@ pyinstaller suisen.spec
 
 本项目以 [Apache License 2.0](LICENSE) 开源。
 
-注意：FFmpeg 与 libmpv 为 GPL/LGPL 组件，**不包含**在本仓库与发行包中，由程序在你的机器上按需下载；ProPainter 为非商用许可，需用户自行获取。详见 PACKAGING.md 的许可证速查表。
+注意：FFmpeg 为 GPL/LGPL 组件，**不包含**在本仓库与发行包中，由程序在你的机器上按需下载；libmpv（GPL-2.0+）以独立 DLL 随安装包分发，已附许可证全文与源码链接（安装目录 `THIRD-PARTY-NOTICES.txt`）；ProPainter 为非商用许可，需用户自行获取。详见 PACKAGING.md 的许可证速查表。
 
 ## 🙏 致谢
 

@@ -45,7 +45,7 @@ FFmpeg 是 GPL 组件。当前实现: 程序在用户机器上按需自动下载
 | simple-lama-inpainting / LAMA 权重 | Apache-2.0 | 权重由模型库下载 |
 | OpenCV | Apache-2.0 | |
 | FFmpeg | GPL/LGPL | 不打包, 用户机器上按需自动下载 |
-| libmpv | GPL-2.0+ | 不打包, 用户机器上按需自动下载(同 FFmpeg) |
+| libmpv | GPL-2.0+ | **随安装包分发**(独立 DLL, 运行时动态加载, 新机器免下载); 已附 GPL-2.0 全文与源码链接(`THIRD-PARTY-NOTICES.txt` + `third_party_licenses/`, 安装时写入安装目录) |
 | ProPainter | S-Lab 非商用 | **不入库**, 用户自行下载; 下载确认框已提示 |
 | DiffuEraser | 看其仓库 | 同上 |
 | GLM-OCR / Qwen3 / Qwen3-VL / Qwen3.8 / DeepSeek-R1 模型 | 各自许可 | 用户经 Ollama 自行拉取 |
